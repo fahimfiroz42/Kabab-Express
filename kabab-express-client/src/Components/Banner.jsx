@@ -12,7 +12,7 @@ import img6 from "../assets/home/06.png";
 const Banner = () => {
     return (
         <div>
-             <Carousel showArrows={true} className='' >
+             <Carousel showArrows={true} infiniteLoop={true}  autoPlay={true} className="flex flex-col items-center justify-center">
                 <div>
                     <img src={img1} />
                     
