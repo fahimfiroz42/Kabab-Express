@@ -3,6 +3,7 @@ import BistroBanner from "../Components/BistroBanner";
 import Category from "../Components/Category";
 import FromOurMenu from "../Components/FromOurMenu";
 import Menu from "../Components/Menu";
+import Testimonials from "../Components/Testimonials";
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <BistroBanner/>
             <Menu/>
             <FromOurMenu/>
+            <Testimonials/>
             
         </div>
     );
