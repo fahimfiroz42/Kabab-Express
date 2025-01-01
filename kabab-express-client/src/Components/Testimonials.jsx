@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Heading from './Heading';
 import { FaQuoteLeft } from "react-icons/fa";
+import { Rating } from 'react-simple-star-rating'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -17,6 +18,8 @@ import { Autoplay, Pagination} from 'swiper/modules';
 
 const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
+    const [rating, setRating] = useState(0)
+
     useEffect(() => {
        fetch('reviews.json')
        .then(res=>res.json())
@@ -50,6 +53,8 @@ const Testimonials = () => {
                     <SwiperSlide key={review._id}>
 
                         <div className='text-center p-20'>
+
+                            <h1>      </h1>
 
 
                          <h1 className='text-6xl flex justify-center'><FaQuoteLeft /></h1>
