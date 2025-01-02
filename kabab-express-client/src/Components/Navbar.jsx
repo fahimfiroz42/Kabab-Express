@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -35,11 +36,11 @@ const Navbar = () => {
   </div>
   <div className="flex-end flex-shrink-0 hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>HOME</a></li>
-      <li><a>CONTACT US</a></li>
-      <li><a>DASHBOARD</a></li>
-      <li><a>OUR MENU</a></li>
-      <li><a>OUR SHOP</a></li>
+      <li><NavLink to="/">HOME</NavLink></li>
+      <li><NavLink to="/contact">CONTACT US</NavLink></li>
+      <li><NavLink to="/dashboard">DASHBOARD</NavLink></li>
+      <li><NavLink to={"/menu"}>OUR MENU</NavLink></li>
+      <li><NavLink to="/shop">OUR SHOP</NavLink></li>
      
      
     </ul>
