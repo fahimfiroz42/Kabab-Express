@@ -229,7 +229,7 @@
         "recipe": "Roasted duck breast (served pink) with gratin potato and a griottine cherry sauce",
         "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2017/01/bbq-370x247.jpg",
         "category": "pizza",
-        "price": 14.5
+        "price": 12.5
     },
     {
         "_id": "642c155b2c4774f05c36eeb3",
@@ -253,7 +253,7 @@
         "recipe": "Chargrilled fresh tuna steak (served medium rare) on classic Niçoise salad with French beans.",
         "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2016/08/product-1-370x247.jpg",
         "category": "soup",
-        "price": 14.7
+        "price":
     },
     {
         "_id": "642c155b2c4774f05c36eeb8",
