@@ -2,26 +2,17 @@
 import { useEffect, useState } from 'react';
 import Heading from './Heading';
 import MenuCard from './MenuCard';
+import useMenu from '../hooks/useMenu';
 
 
 const Menu = () => {
+    const [menu]=useMenu()
 
-    const [menu,setMenu]= useState([])
-   useEffect(()=>{
+      const filterMenu=menu.filter(item=>item.category==="popular")
 
+      
+     
 
-    fetch('menu.json')
-    .then(res=>res.json())
-    .then(data=>{
-      const filterMenu=data.filter(item=>item.category==="popular")
-      setMenu(filterMenu)
-
-    }
-
-
-    )
-
-   },[])
    
 
     return (
@@ -33,7 +24,7 @@ const Menu = () => {
 
             <div className='grid md:grid-cols-2 gap-10 mb-20'>
                 {
-                    menu.map(item=><MenuCard    key={item._id} item={item}/>)
+                    filterMenu.map(item=><MenuCard    key={item._id} item={item}/>)
                 }
                  
 
