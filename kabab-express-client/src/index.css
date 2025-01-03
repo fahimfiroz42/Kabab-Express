@@ -5,3 +5,15 @@
 body{
   font-family: "Nunito", serif;
 }
+
+.react-tabs__tab{
+  border: none;
+  
+
+}
+.react-tabs__tab--selected {
+  text-decoration: underline;
+  background-color: rgba(233, 218, 51, 0.637);
+  color: yellow;
+
+}
