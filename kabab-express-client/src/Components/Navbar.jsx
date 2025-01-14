@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="">
-            <div className="navbar fixed z-50 text-white bg-black/30   ">
-  <div className="navbar-start ">
+        <div className=" flex justify-center  ">
+            <div className="flex rounded-3xl px-5 mt-5 border fixed z-50 text-white bg-black/30   ">
+  <div className=" ">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg
@@ -34,20 +34,20 @@ const Navbar = () => {
     </div>
     <a className="btn btn-ghost text-xl"> <span className="font-bold text-">KABAB</span> EXPRESS</a>
   </div>
-  <div className="flex-end flex-shrink-0 hidden lg:flex">
+  <div className="items-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       <li><NavLink to="/">HOME</NavLink></li>
       <li><NavLink to="/contact">CONTACT US</NavLink></li>
       <li><NavLink to="/dashboard">DASHBOARD</NavLink></li>
       <li><NavLink to={"/menu"}>OUR MENU</NavLink></li>
       <li><NavLink to="/shop">OUR SHOP</NavLink></li>
+      
      
      
     </ul>
+    <a className="btn btn-sm rounded-xl ">Button</a>
   </div>
-  <div className="navbar-end w-auto">
-    <a className="btn">Button</a>
-  </div>
+ 
 </div>
 
             
