@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import { FaShoppingCart } from 'react-icons/fa';
 import useCart from "../hooks/useCart";
@@ -58,11 +58,6 @@ const Navbar = () => {
                     }
                 </div>
             </div>
-        </div>
-    );
-};
-
-            
         </div>
     );
 };

@@ -64,12 +64,4 @@ const Shop = () => {
     );
 };
 
-
-
-
-            
-        </div>
-    );
-};
-
-export default Shop;
+export default Shop;
