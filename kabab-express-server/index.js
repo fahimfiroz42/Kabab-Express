@@ -27,8 +27,19 @@ async function run() {
     // Generate jwt token
     
     // Logout
+    const db=client.db('kabab-express');
+    const menuCollection=db.collection('menus');
    
-
+    app.get('/menus',async(req,res)=>{
+        const result=await menuCollection.find().toArray();
+        res.send(result);
+    })
+    
+    app.post('/menus',async(req,res)=>{
+        const menu=req.body;
+        const result=await menuCollection.insertOne(menu);
+        res.send(result);
+    })
     // Send a ping to confirm a successful connection
     await client.db('admin').command({ ping: 1 })
     console.log(
