@@ -5,6 +5,8 @@ import MainLayout from "../MainLayout/MainLayout";
 import Home from "../Pages/Home";
 import Menu from "../Pages/Menu";
 import Shop from "../Pages/Shop";
+import Login from "../Pages/Login";
+import SignUp from "../Pages/SignUp";
 
 
   const Route =createBrowserRouter([
@@ -24,6 +26,14 @@ import Shop from "../Pages/Shop";
           {
             path:'/shop',
             element:<Shop/>
+          },
+          {
+            path: 'login',
+            element: <Login />
+          },
+          {
+            path: 'signup',
+            element: <SignUp />
           }
       ]
     },
